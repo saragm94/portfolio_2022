@@ -16,9 +16,9 @@ body {
   height: 50%;
   color: white;
   font-family: 'Raleway';
-  font-size: 2.5rem;
+  font-size: 100%;
 }
-#texto{font-size: 1.5rem; padding: 2%}
+#texto{font-size: 1.5rem; padding: 2%; word-wrap: break-word;}
 .gradient-border {
   --borderWidth: 10px;
   background: #252839;
