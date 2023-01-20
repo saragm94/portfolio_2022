@@ -120,18 +120,10 @@ ul li a:hover::before{
   /*Tamaño medio (tablets)*/
 @media (min-width: 768px) {
   #box {
-    width: 90%;
-    height: 90%;
+    width: 85%;
+    height: 85%;
   }
  }
-
-/*Tamaño mediano-grande*/
-@media (min-width: 992px) {
-  #box {
-    width: 80%;
-    height: 70%;
-  }
-}
 
   /*Tamaño grande*/
 @media (min-width: 1200px) 
