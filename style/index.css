@@ -11,12 +11,11 @@ body {
 #box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 60%;
-  height: 50%;
   color: white;
   font-family: 'Raleway';
   font-size: 100%;
+  width: 90%;
+  height: 90%;
 }
 #texto{font-size: 1.5rem; padding: 2%; word-wrap: break-word;}
 .gradient-border {
@@ -108,3 +107,37 @@ ul li a:hover::before{
   width: 100%;
   filter: drop-shadow(0 0 25px var(--clr));
 }
+
+
+/*Tamaños de pantalla*/
+  /*Tamaño pequeño*/
+@media (min-width: 576px) {
+  #box {
+  width: 95%;
+  height: 95%;
+} }
+
+  /*Tamaño medio (tablets)*/
+@media (min-width: 768px) {
+  #box {
+    width: 90%;
+    height: 90%;
+  }
+ }
+
+/*Tamaño mediano-grande*/
+@media (min-width: 992px) {
+  #box {
+    width: 80%;
+    height: 70%;
+  }
+}
+
+  /*Tamaño grande*/
+@media (min-width: 1200px) 
+{ 
+  #box {
+    width: 70%;
+    height: 60%;
+  }
+ }
