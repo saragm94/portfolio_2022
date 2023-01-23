@@ -111,17 +111,24 @@ ul li a:hover::before{
 
 /*Tamaños de pantalla*/
   /*Tamaño pequeño*/
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-height: 300px) {
   #box {
   width: 95%;
   height: 95%;
 } }
 
   /*Tamaño medio (tablets)*/
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-height: 400px) {
   #box {
     width: 85%;
     height: 85%;
+  }
+ }
+ @media (min-width: 768px) and (max-height: 550px)
+ {
+  #box {
+    width: 85%;
+    height: 90%;
   }
  }
 
