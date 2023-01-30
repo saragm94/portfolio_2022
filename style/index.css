@@ -110,9 +110,6 @@ ul li a:hover::before{
 
 
  /**
- * Basic CSS Media Query Template
- * TODO: I should probably use Sass...
- * Author: Michael Vieth
  * ------------------------------------------
  *  Responsive Grid Media Queries - 1280, 1024, 768, 480
  *   1280-1024   - desktop (default grid)
@@ -146,6 +143,7 @@ ul li a:hover::before{
     width: 85%;
     height: 85%;
   }
+  
 }
 
 @media all and (max-width: 480px) 
@@ -155,23 +153,27 @@ ul li a:hover::before{
   width: 95%;
   height: 95%;
   } 
+  #texto{text-align: center;}
+  
+  
+  #texto{text-align: center;}
 }
 
 
 /* Portrait */
-@media screen and (orientation:portrait) { /* Portrait styles here */ }
+/*@media screen and (orientation:portrait) { /* Portrait styles here  }*/
 /* Landscape */
-@media screen and (orientation:landscape) { /* Landscape styles here */ }
+/*@media screen and (orientation:landscape) { /* Landscape styles here }*/ 
 
 
 /* CSS for iPhone, iPad, and Retina Displays */
 
 /* Non-Retina */
-@media screen and (-webkit-max-device-pixel-ratio: 1) {
+/*@media screen and (-webkit-max-device-pixel-ratio: 1) {
 }
 
 /* Retina */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+/*@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
@@ -185,6 +187,28 @@ only screen and (min-device-pixel-ratio: 1.5) {
   width: 90%;
   height: 90%;
   } 
+  #texto > h1
+  {
+    display: flex;
+    position: fixed;
+    top: 0;
+    margin-top: 20%;
+    font-size: 3em;
+  }
+  #texto > p 
+  {
+    font-size: 2.5rem; 
+    padding: 5%;
+    line-height: 300%;
+  }
+  #lista > ul
+  {
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 0;
+    font-size: 3em;
+  }
+  #texto{text-align: center;}
   #lista > ul
   {
     padding-left: 0;
@@ -192,7 +216,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 } 
 
 /* iPhone Landscape */
-@media screen and (max-device-width: 480px) and (orientation:landscape) 
+/*@media screen and (max-device-width: 480px) and (orientation:landscape) 
 {
   #lista > ul
   {
@@ -203,7 +227,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 /* iPad Portrait */
-@media screen and (min-device-width: 481px) and (orientation:portrait) {
+/*@media screen and (min-device-width: 481px) and (orientation:portrait) {
 }
 
 /* iPad Landscape */
@@ -213,9 +237,15 @@ only screen and (min-device-pixel-ratio: 1.5) {
   width: 90%;
   height: 90%;
   } 
+  #texto{text-align: center;}
   #lista > ul
   {
-    gap: 10px;
+    gap: 5px;
     padding-left: 0;
+    align-items: center;
+    
+  }
+  ul li a{
+    font-size: 1.5em;
   }
 }
