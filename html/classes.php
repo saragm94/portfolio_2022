@@ -13,7 +13,14 @@
         <a style="--clr:#dc00d4" href="../index.html" data-text="&nbsp;Go&nbsp;Back">&nbsp;Go&nbsp;Back&nbsp;</a>
       </div>
       <div class="row" id="actividades">
-
+        <script>
+          var files = <?php $out = array();
+          foreach (glob('file/*.html') as $filename) {
+              $p = pathinfo($filename);
+              $out[] = $p['filename'];
+          }
+          echo json_encode($out); ?>;
+        </script>
       </div>
       <div class="row botones" id="gotop">
         <a style="--clr:#dc00d4" href="" data-text="&nbsp;Go&nbsp;top">&nbsp;Go&nbsp;top&nbsp;</a>
