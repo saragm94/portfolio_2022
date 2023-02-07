@@ -1,9 +1,8 @@
 html, body {
   height: 100%;
-  background-color: #252839;
+  background-color: #252839!important;
 }
 *{
   margin: 0;
   padding: 0;
 }
-a:hover{color:#252839!important}
